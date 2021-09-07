@@ -1,0 +1,335 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #ffff;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+}
+
+header #logo {
+    width: 80px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+header li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header li a:hover {
+    background-color: black;
+    color: #ffff;
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/wbr-hero2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#hero h1 {
+    color: rgb(240, 239, 239);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    color: rgb(240, 239, 239);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#hero a {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* SERVICES */
+
+#services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#services p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#services hr {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin-bottom: 70px;
+}
+
+#services .grid {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+
+#services .grid li {
+    text-align: center;
+    padding: 0 15px;
+}
+
+#services .grid li i {
+    margin-bottom: 30px;
+}
+
+#services .grid li h4 {
+    margin-bottom: 30px;
+}
+
+#services .grid li p {
+    margin-bottom: 30px;
+}
+
+/* PLANOS */
+
+#planos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+    background-color: black;
+}
+
+#planos h2 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ccc;
+}
+
+#planos p {
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    color: #ccc;
+}
+
+#planos hr {
+    width: 200px;
+    height: 2px;
+    border: none;
+    background-color: #ccc;
+    margin-bottom: 70px;
+}
+
+#planos .grid {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 50px;
+    background-color: black;
+}
+
+#planos .grid li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 15px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#planos .grid li:hover {
+    background-color: rgb(37, 33, 33);
+}
+
+#planos .grid li a {
+    text-decoration: none;
+    justify-content: center;
+}
+
+#planos .grid li h4{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+#planos .grid li p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+#planos .grid li h1 {
+    text-align: center;
+    color: #ccc;
+}
+
+/* Form */
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+#form form input {
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#form a {
+    text-decoration: none;
+    color: #ffff;
+    background-color: black;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+#form a:hover {
+    background-color: rgb(37, 33, 33);
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 50px 0;
+}
+
+footer .links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .links li {
+    margin-right: 15px;
+}
+
+footer .links a {
+    font-size: 2rem;
+}
+
+footer .links li i {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: #ccc;
+}
+
+/* TABLET */
+
+@media (max-width: 750px) {
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    #services .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    #planos .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* SMARTPHONE */
+
+@media (max-width: 450px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+    #hero p {
+        font-size: 1.2rem;
+    }
+    #services .grid {
+        display: flex;
+        flex-direction: column;
+    }
+    #services h2 {
+        font-size: 1.2rem;
+    }
+    #services p {
+        font-size: 0.8rem
+    }
+    #planos .grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
